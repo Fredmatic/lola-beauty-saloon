@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lola Beauty Saloon</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="header">
+        <h2>LOLA BEAUTY SALOON</h2>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#services">Services</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contacts</a>
+        </nav>
+    </header>
+    <main>
+        <section class="hero" id="home">
+            <h2>Welcome to Lola Beauty Saloon</h2>
+            <p>Beauty, care and confidence.</p>
+            <button class="submit" id="bookAppointment">
+                Book an Appointment
+            </button>
+        </section>
+
+        <section class="services" id="services">
+            <h1>Services</h1>
+            <p>Discover beauty and confidence at Lola Beauty Saloon.<br> We offer professional beauty services tailored
+                to
+                your style, helping you look beautiful, feel confident and enjoy every moment.</p>
+            <div class="service-container">
+                <div class="service-card">
+                    <h3>Hair styling</h3>
+                    <p>Professional hair styling to match your looks.</p>
+                    <p>UGX 30,000</p>
+                    <button type="button" data-service="Hair Styling">Book Now</button>
+                </div>
+                <div class="service-card">
+                    <h3>Hair treatment</h3>
+                    <p>We deal with only Professional hair treatment that heal your looks.</p>
+                    <p>UGX 50,000</p>
+                    <button type="button" data-service="Hair Treatment">Book Now</button>
+                </div>
+                <div class="service-card">
+                    <h3>Makeup</h3>
+                    <p>Our professional makeup services enhance your natural beauty.</p>
+                    <p>UGX 100,000</p>
+                    <button type="button" data-service="Makeup">Book Now</button>
+                </div>
+            </div>
+
+        </section>
+        <section class="about" id="about">
+            <h1>About Us</h1>
+            <p>
+                Lola Beauty Saloon is dedicated to helping you look beautiful
+                and feel confident.<br> We provide professional beauty services
+                in a welcoming and comfortable environment.<br>
+                Our goal is to give every customer quality care,
+                excellent service and a beautiful experience.
+            </p>
+        </section>
+        <section class="contact" id="contact">
+            <h1>Contact Us</h1>
+            <p>+256 740 271 661</p>
+            <p>doris@gmail.com</p>
+        </section>
+
+        <div class="booking-modal" id="bookingModal">
+            <div class="booking-content">
+                <button type="button" id="closeModal">✕</button>
+                <h2>Book an Appointment</h2>
+
+                <form id="bookingForm">
+                    <label for="customerName">Your Name</label>
+                    <input type="text" id="customerName" name="customerName" required>
+
+                    <label for="customerPhone">Phone Number</label>
+                    <input type="tel" id="customerPhone" name="customerPhone" required>
+                    <label for="service">Choose Service</label>
+                    <select id="service" required>
+                        <option value="">Select a service</option>
+                        <option value="Hair Styling">Hair Styling</option>
+                        <option value="Hair Treatment">Hair Treatment</option>
+                        <option value="Makeup">Makeup</option>
+                    </select>
+
+                    <button type="submit">Confirm Booking</button>
+                </form>
+            </div>
+        </div>
+        <div id="bookingConfirmation"></div>
+
+    </main>
+    <footer>
+        <p>&copy; 2026 Lola Beauty Saloon. All rights Reserved.</p>
+        <p>Nyabuto George</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
